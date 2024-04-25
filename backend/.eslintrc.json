@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:node/recommended",
+    "eslint:recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "prefer-destructuring": "off",
+    "comma-dangle": ["off", "always-multiline"],
+    "node/no-unsupported-features/es-syntax": ["off"],
+    "no-unsafe-optional-chaining":"off",
+    "semi": "off",
+    "no-nested-ternary":"off",
+    "dot-notation": "off",
+    "object-shorthand": "off",
+    "prefer-template": "off",
+    "default-param-last":"off",
+    "no-var": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "no-process-exit": "off",
+    "no-console": "error",
+    "spaced-comment": ["error", "always"],
+    "import/newline-after-import": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["_id", "_update", "_conditions"] }
+    ],
+    "prefer-const": "error",
+    "func-names": "off",
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "arrow-body-style": "off",
+    "prefer-regex-literals": "off"
+  }
+}
